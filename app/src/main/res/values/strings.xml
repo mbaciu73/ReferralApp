@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Referal_App_version2</string>
+    <string name="big_login">LOG IN</string>
+    <string name="big_register">REGISTER</string>
 </resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/search_big_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reminderButton"
+        app:layout_constraintEnd_toStartOf="@+id/reminderButton"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/reminderButton"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+
+        android:layout_marginTop="85dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/reminder_big_button"
+        app:layout_constraintBottom_toTopOf="@+id/profileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cateButton"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cate_big_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/profileButton"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/profile_big_button"
+        app:layout_constraintBottom_toTopOf="@+id/sosButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cateButton"
+        app:layout_constraintTop_toBottomOf="@+id/reminderButton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/sosButton"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/sos_logo"
+        app:layout_constraintBottom_toTopOf="@+id/menubar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileButton"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="29dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sosButton"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/barMain"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/home_small_button" />
+
+        <Button
+            android:id="@+id/batCate"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/cate_small_button" />
+
+        <Button
+            android:id="@+id/barReminder"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/reminder_small_button" />
+
+        <Button
+            android:id="@+id/barProfile"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/profile_small_button" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="17dp"
+        android:text="CATEGORY"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/gp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/gp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_cate"
+        android:drawableLeft="@drawable/gp_icon"
+        android:text="  Doctor/GP"
+        android:textAlignment="textStart"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/dental"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/dental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_cate"
+        android:drawableLeft="@drawable/gp_icon"
+        android:text="  Doctor/GP"
+        android:textAlignment="textStart"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/hairCut"
+        app:layout_constraintStart_toStartOf="@+id/gp"
+        app:layout_constraintTop_toBottomOf="@+id/gp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/hairCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_cate"
+        android:drawableLeft="@drawable/gp_icon"
+        android:text="  Doctor/GP"
+        android:textAlignment="textStart"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/library"
+        app:layout_constraintStart_toStartOf="@+id/dental"
+        app:layout_constraintTop_toBottomOf="@+id/dental"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_cate"
+        android:drawableLeft="@drawable/gp_icon"
+        android:text="  Doctor/GP"
+        android:textAlignment="textStart"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/socialWorker"
+        app:layout_constraintStart_toStartOf="@+id/hairCut"
+        app:layout_constraintTop_toBottomOf="@+id/hairCut"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/socialWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="169dp"
+        android:background="@drawable/rectangle_cate"
+        android:drawableLeft="@drawable/gp_icon"
+        android:text="  Doctor/GP"
+        android:textAlignment="textStart"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/menubar"
+        app:layout_constraintStart_toStartOf="@+id/library"
+        app:layout_constraintTop_toBottomOf="@+id/library"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="29dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/socialWorker"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/barMain"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/home_small_button" />
+
+        <Button
+            android:id="@+id/batCate"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/cate_small_button" />
+
+        <Button
+            android:id="@+id/barReminder"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/reminder_small_button" />
+
+        <Button
+            android:id="@+id/barProfile"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38.6px"
+            android:layout_marginRight="38.6px"
+            android:layout_weight="1"
+            android:background="@drawable/profile_small_button" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

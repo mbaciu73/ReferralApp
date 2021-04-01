@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.referal_app_version2;
 
 import org.junit.Test;
 
